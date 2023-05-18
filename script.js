@@ -1,9 +1,11 @@
 var characters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var specialCharacters = "!@#$%^&*()";
+  //var password = generatePassword();
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+
+  createPasswordLength();
   var passwordText = document.querySelector("#password");
 
     for (var i = 0; i <= passwordLength; i++){
