@@ -5,10 +5,13 @@
 ## Description
 
 This is a simple password generator powered by JavaScript. It takes user input to determine how long the password should be and what type of characters used. With all of the inputs, the app will give you a randomly generated password.
+
 This generator removes the headache of trying to think of a secure passwords and meeting the criteria from websites.
+
 The major problem I had with this project is having to results display in the HTML. With a few tweaks in variable declarations and simplifying functions, I was able to get the app to run multiple times with a new password.
 
 You can try it here: https://cmdnguyen.github.io/GeneratePassword/
+
 ## Installation
 
 N/A
