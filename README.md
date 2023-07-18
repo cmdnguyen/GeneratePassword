@@ -12,6 +12,13 @@ The major problem I had with this project is having to results display in the HT
 
 You can try it here: https://cmdnguyen.github.io/GeneratePassword/
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
 ## Installation
 
 N/A
