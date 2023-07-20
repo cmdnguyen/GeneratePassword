@@ -1,17 +1,20 @@
+//Defines the characters
 var numericCharacters = "1234567890";
 var specialCharacters = "!@#$%&'()*+,^-./:;<=>?[]_`{~}|";
 var lowercaseCharacters =  "abcdefghijklmnopqrstuvwxyz";
 var uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+//Starts password, passOptions as empty strings and sets passwordLength as 0
 var password = "";
 var passwordLength = 0;
 var passOptions = '';
 
 
-// Add event listener to generate button
+// Event listener to generate button
 var generateBtn = document.querySelector("#generate")
 generateBtn.addEventListener("click", writePassword);
 
-// Write password to the #password input
+// Writes password to the #password input
 function writePassword() {
   password = "";
   passwordLength = 0;
@@ -21,7 +24,7 @@ function writePassword() {
   passwordText.value = password
   }
 
-  //creates randomly generated password
+  //Creates randomly generated password
  function generatePassword(){
   createPasswordLength()
   createPasswordOptions()
@@ -35,7 +38,7 @@ function writePassword() {
   
  } 
 
- //takes user input for length of password
+ //Takes user input for length of password
 function createPasswordLength() {
   passwordLength = prompt(
     "How long would like the length of your password to be? (Must be 8 - 128 characters in length)"
@@ -49,7 +52,7 @@ function createPasswordLength() {
       }
 }
 
-//function to add options for character types in password
+//Function to add options for character types in password
 function createPasswordOptions() {  
   var containsSpecialCharacters = confirm(
     "Click OK to confirm include special characters."
@@ -78,7 +81,7 @@ function createPasswordOptions() {
       passOptions = passOptions.concat(uppercaseCharacters) 
   };
 
-  //if user does not select character type, the function will run again
+  //If user does not select character type, the function will run again
   if (!containsLowercaseCharacters && !containsUppercaseCharacters && !containsNumbers  && !containsSpecialCharacters) {
     alert(
       "Please select at least one character type."
